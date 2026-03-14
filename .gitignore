@@ -1,0 +1,5 @@
+# Exclude configuration file with private paths
+*.txt
+
+# Exclude log files
+logs/
