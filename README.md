@@ -12,7 +12,7 @@ A Windows batch script for automated file synchronization to a NAS using robocop
 ## Usage
 
 ```cmd
-backup.cmd
+.\backup.cmd
 ```
 
 The script will read `sync_map.txt` and synchronize all configured directories.
