@@ -35,7 +35,7 @@ for /f "tokens=1,* delims==" %%A in ('type "%MAPFILE%" ^| findstr /v /r "^#"') d
         if "%%A"=="NASROOT" (
             set NASROOT=%%B
         ) else (
-            for /f "tokens=1,2 delims=|" %%X in ("%%A=%%B") do (
+            for /f "tokens=1,2 delims=|" %%X in ("%%A") do (
                 if not "%%X"=="" call :sync "%%X" "%%Y"
             )
         )
@@ -77,8 +77,7 @@ REM ===== SYNC FUNCTION =====
         /E ^
         /XO ^
         /FFT ^
-        /Z ^
-        /MT:16 ^
+        /MT:8 ^
         /R:5 ^
         /W:5 ^
         /ETA ^

@@ -56,8 +56,7 @@ The script uses the following robocopy arguments:
 - `/E` - Copy subdirectories, including empty ones
 - `/XO` - Exclude older files (only copy newer files)
 - `/FFT` - Assume FAT file times (2-second granularity)
-- `/Z` - Copy files in restartable mode (survive network interruptions)
-- `/MT:16` - Multi-threaded copying with 16 threads
+- `/MT:8` - Multi-threaded copying with 8 threads
 - `/R:5` - Number of retries on failed copies (5 retries)
 - `/W:5` - Wait time between retries (5 seconds)
 - `/ETA` - Show estimated time of arrival for each file
